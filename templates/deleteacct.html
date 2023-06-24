@@ -1,0 +1,44 @@
+{% extends 'baselogin.html' %}
+{% block title %} Delete Account {% endblock title %}
+{% block form %}
+{% include "message.html" %}
+<style>
+    #mybutton{
+        color: black;
+        background-color: rgb(166, 36, 36);
+    }
+
+</style>
+<h2 style="color:black;"> Delete Account </h2>
+
+<div class="row">
+
+    <div class="col-md-4"></div>
+
+    <div class="col-md-15">
+        <div class="text-center">
+            <form action="/delete" method="post">
+
+            <div class="form-group">
+            <input type="text" class="form-control mt-2" placeholder="Enter your username" name=name required>
+            </div>
+
+            <div class="form-group">
+            <input type="password" class="form-control mt-2" placeholder="Enter your password" name=password required>
+            </div>
+          
+            <br>
+            <div class="text-center">
+            <button id="mybutton" type="submit" class="btn btn-info" >Delete!</button>
+            </div>
+          
+        </form>
+    </div>
+    
+
+</div>
+    <div class="col-md-4"></div>
+
+</div>
+
+{% endblock form %}

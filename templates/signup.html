@@ -1,0 +1,61 @@
+{% extends 'baselogin.html' %}
+{% block title %} User Signup {% endblock title %}
+{% block form %}
+{% include "message.html" %}
+<h2 style="color:black;"> Sign Up </h2>
+
+<div class="row">
+
+    <div class="col-md-4"></div>
+
+    <div class="col-md-15">
+        <div class="text-center">
+            <form action="/signup" method="post">
+                
+            
+            
+            <div class="form-group">
+            <input type="text" class="form-control mt-2" placeholder="Enter your username" name=name required>
+            </div>
+
+            <div class="form-group">
+            <input type="text" class="form-control mt-2" placeholder="Enter your phone number" name=phone 
+            minlength="10" maxlength="10"  required>
+            </div>
+            
+            <div class="form-group">
+            <input type="text" class="form-control mt-2" placeholder="city" name=city >
+            </div>
+
+            <div class="form-group">
+            <input type="email" class="form-control mt-2" placeholder="Enter your email" name=email required>
+            </div>
+
+            <div class="form-group">
+            <input type="password" class="form-control mt-2" placeholder="Enter your password" name=password required>
+            </div>
+
+            
+
+            <br>
+            <div class="text-center">
+            <button type="submit" class="btn btn-info" >SignIn</button>
+            </div>
+          
+        </form>
+    </div>
+    
+
+</div>
+    <div class="col-md-4"></div>
+
+</div>
+
+{% endblock form %}
+
+{% block body %}
+    <h5 style="color: black;"> Already a user?</h5><a href="/login" style="color: black;" style="text-align: center;"> Login</a>
+    <br>
+    <br>
+{% endblock body %}
+

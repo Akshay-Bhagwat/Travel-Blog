@@ -1,0 +1,67 @@
+
+{% block body %}
+    
+<style>
+
+header{
+    margin-left: 8%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-style: oblique;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#myhr{
+    margin-left: 1%;
+    margin-right: 1%;
+    color:black;
+    size: 3px;
+}
+div {
+
+    margin-left: 8%;
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+    font-style: oblique;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    
+}
+
+#mybutton{
+    background-color: rgb(111, 183, 242);
+    font-style: oblique;
+    color: black;
+}
+
+</style>
+<body>
+        <header>
+            <h1 style="font-variant-caps: petite-caps;">Your Search Results</h1>
+        </header>
+        <hr id="myhr" size="3" color="black" >
+    
+<div action="" method="POST">
+    <table>
+    <thead></thead>
+    <tbody>
+        {% for i in value %}
+                <tr>
+                    <td>
+                    <a href={{i.blog}} target="_blank"><h2 style="color: black;"> {{i.name}} </h2></a>
+                    <hr>
+                    <h5>Country: {{i.country}}</h5>
+                    <h5>Visit related blog:<a href="{{i.blog}}" target="_blank">{{i.blog}}</a></h5> 
+                    <a href="{{i.blog}}"><button id="mybutton" type="submit" class="btn btn-info" >Go to the page</button></a>
+                    <iframe src={{i.blog}} width="1050" height="400" frameborder="0"></iframe>
+                    <td>
+                </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+</div>
+
+</body>
+</html>
+
+{% endblock body %}

@@ -1,0 +1,45 @@
+{% extends 'baselogin.html' %}
+{% block title %} User Signup {% endblock title %}
+{% block form %}
+
+<h2 style="color: black;"> Login </h2>
+{% include "message.html" %}
+<div class="row">
+
+    <div class="col-md-4"></div>
+
+    <div class="col-md-15">
+        <div class="text-center">
+            <form action="/login" method="post">
+            
+            <div class="form-group">
+            <input type="email" class="form-control mt-2" placeholder="Enter your email" name=email required>
+            </div>
+
+            <div class="form-group">
+            <input type="password" class="form-control mt-2" placeholder="Enter your password" name=password required>
+            </div>
+            
+            <br>
+            <div class="text-center">
+            <button type="submit" class="btn btn-info" >Login</button>
+            </div>
+          
+        </form>
+    
+    </div>
+</div>
+    <div class="col-md-4"></div>
+
+</div>
+
+
+{% endblock form %}
+
+{% block body %}
+    <h5 style="color: black;"> Not a user yet? </h5><a href="/signup" style="color: black;" style="font-size: x-large;">Sign up</a>
+    <br>
+    <br>
+    <h5 style="color: black;">Forgot password? </h5><a href="/updatepswd">click here</a>
+    <br>
+{% endblock body %}

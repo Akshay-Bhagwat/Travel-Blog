@@ -1,0 +1,47 @@
+{% extends 'baselogin.html' %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+
+  div {
+    padding-left: 100px;
+  }
+
+</style>
+<body>
+  <div action="" method="POST">
+    <table>
+      <thead>
+        <tr>
+          <th>shit          </th>
+          <th>shit          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in post %}
+          <tr>
+            <td><a href={{i.blog}} target="_blank"><h3 style="color: black;"> {{i.resname}} </h3></a>
+            <iframe src={{i.blog}} width="1050" height="400" frameborder="0"></iframe>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  
+</body>
+</html>
+
+{% endblock body %}
+
+#rname=Food.query.filter_by(resname=resname).first()
+#if rname:
+#    flash("Restaurant already exists", "warning")
+#    return redirect('/restaurant')

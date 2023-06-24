@@ -1,0 +1,51 @@
+{% extends 'baselogin2.html' %}
+{% block title %} Post Destination Blog {% endblock title %}
+{% block form %}
+<br>
+<br><br><br>
+{% include "message.html" %}
+<h2 style="color:black;"> Post Food Blog </h2>
+
+<div class="row">
+
+    <div class="col-md-4"></div>
+
+    <div class="col-md-15">
+        <div class="text-center">
+            <form action="/food" method="post">
+
+                <div class="form-group">
+                    <input type="text" class="form-control mt-2" placeholder="Enter restaurant name" name=resname required>
+                </div>
+    
+                <div class="form-group">
+                <input type="text" class="form-control mt-2" placeholder="Location name" name=loc required>
+                </div>
+                
+                <div class="form-group">
+                <input type="text" class="form-control mt-2" placeholder="Cuisine" name=cuisine >
+                </div>
+    
+                <div class="form-group">
+                <input type="url" class="form-control mt-2" placeholder="Resturant Blog" name=blog required>
+                </div>
+            
+    
+                <br>
+                <div class="text-center">
+                <button type="submit" class="btn btn-info" >submit</button>
+                </div>
+          
+        </form>
+    </div>
+    
+
+</div>
+    <div class="col-md-4"></div>
+
+</div>
+<div>
+    <h1 style="color: black;"></h1>
+</div>
+
+{% endblock form %}

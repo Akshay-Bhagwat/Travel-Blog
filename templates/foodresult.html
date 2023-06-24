@@ -1,0 +1,59 @@
+
+{% block body %}
+    
+<style>
+
+    header{
+        margin-left: 8%;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        font-style: oblique;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+        
+    #myhr{
+        margin-left: 1%;
+        margin-right: 1%;
+        color:black;
+        size: 50px;
+    }
+    div {
+        padding-left: 100px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: rgb(255, 255, 255);
+        font-style: oblique;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        
+    }
+</style>
+
+<body>
+            <header>
+                <h1 style="font-variant-caps: petite-caps;">Your Search Results</h1>
+            </header>
+            <hr id="myhr" size="3" color="black" >
+    <div action="" method="POST">
+        <table>
+        <thead></thead>
+        <tbody>
+            {% for i in post %}
+                    <tr>
+                        <td>
+                        <a href={{i.blog}} target="_blank"><h3 style="color: black;"> {{i.resname}} </h3></a>
+                        <hr>
+                        <h5>Restaurant location: {{i.locname}}</h5>
+                        <h5>Visit the website:<a href="{{i.blog}}" target="_blank">{{i.blog}}</a></h5> 
+                        <iframe src={{i.blog}} width="1050" height="400" frameborder="0"></iframe>
+                        <td>
+                    </tr>
+            {% endfor %}
+        </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
+
+{% endblock body %}
