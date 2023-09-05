@@ -36,6 +36,6 @@ This project aims to be a one stop destination for all the information the user 
 * The link generated will lead to your webpage.
 
 ### Additional Requirements
-Python 3.8 or higher
-A hosting service like XAMPP
-The MySQL schema included in the repository
+* Python 3.8 or higher
+* A hosting service like XAMPP
+* The MySQL schema included in the repository
