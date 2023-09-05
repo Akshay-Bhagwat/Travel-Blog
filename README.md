@@ -39,3 +39,39 @@ This project aims to be a one stop destination for all the information the user 
 * Python 3.8 or higher
 * A hosting service like XAMPP
 * The MySQL schema included in the repository
+
+## **Snapshots**
+6. SNAPSHOTS 
+  
+ ![image](https://github.com/Akshay-Bhagwat/Travel-Blog/assets/80463932/e4e6966e-b1aa-4c95-ae59-78e5ad41c289)
+
+**Home page**
+  
+ ![image](https://github.com/Akshay-Bhagwat/Travel-Blog/assets/80463932/33f04383-c470-475f-aab7-8c01da2357ac)
+
+**Sign-up page**
+
+![image](https://github.com/Akshay-Bhagwat/Travel-Blog/assets/80463932/50771b34-d97b-4d89-aa90-5792fcf91d6d)
+
+**Login Page**
+
+ ![image](https://github.com/Akshay-Bhagwat/Travel-Blog/assets/80463932/6f542371-cde6-478f-8a32-926aebe50228)
+
+**Food search page** 
+   
+![image](https://github.com/Akshay-Bhagwat/Travel-Blog/assets/80463932/5ba4bc79-05ea-49eb-b7f2-592f44a8458d)
+
+**Accommodations search page**
+
+![image](https://github.com/Akshay-Bhagwat/Travel-Blog/assets/80463932/473072ca-7e8b-4dd5-89be-547fdb8c3715)
+
+**Sights search page**
+
+ ![image](https://github.com/Akshay-Bhagwat/Travel-Blog/assets/80463932/fc1df128-dcf7-4b97-b4ff-ee2127d28775)
+
+**Post Food Blog**
+
+ ![image](https://github.com/Akshay-Bhagwat/Travel-Blog/assets/80463932/276b60f7-67f0-4658-a269-792a63fd019e)
+
+**Delete account**
+
